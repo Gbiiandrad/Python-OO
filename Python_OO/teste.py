@@ -1,4 +1,4 @@
-def cria_conta(numero, titular, saldo, limite):
+def criar_conta(numero, titular, saldo, limite):
     conta = {
         "numero": numero,
         "titular": titular,
@@ -7,11 +7,11 @@ def cria_conta(numero, titular, saldo, limite):
     }
     return conta
 
-def depositar(conta, valor):
+def deposita(conta, valor):
     conta["saldo"] += valor
 
-def sacar(conta, valor):
+def saca(conta, valor):
     conta["saldo"] -= valor
 
 def extrato(conta):
-    print("Seu saldo é {}".format(conta["saldo"]))
+    print("Saldo é {}".format(conta["saldo"]))
